@@ -1,0 +1,144 @@
+.firstSection{
+    display: flex;
+    margin-top: 50px; 
+}
+
+.first{
+    flex: 1; 
+    /* background: lightpink;  */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    width: 400px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageHolder{
+    width: 100%; 
+    height: 400px; 
+    position: relative; 
+}
+
+.imageRow{
+    display: flex; 
+    justify-content: space-between;
+    /* background: blue;  */
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+.miniHolder{
+    width: 100px; 
+    height: 100px; 
+    position: relative; 
+}
+
+.set{
+    border: 1px solid black; 
+}
+
+
+
+.second{
+    flex: 1; 
+    /* background: lightblue; */
+}
+
+.title{
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+.genre{
+    font-size: 12px;
+    margin-top: 5px; 
+    color: #bbb; 
+}
+
+.description{
+    margin-top: 30px; 
+    line-height: 1.5em;;
+}
+
+
+.checkoutHolder{
+    width: fit-content; 
+    /* height: 200px;  */
+    /* background-color: beige;  */
+    margin-top: 50px; 
+    display: flex; 
+}
+
+.count{
+    width: 100px; 
+    height: 50px; 
+    border: 1px solid black; 
+    border-radius: 100px; 
+    display: flex; 
+    overflow: hidden;
+    font-size: 10px;
+    margin-right: 20px; 
+}
+
+.iconField, .quantity{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.iconField{
+    flex: 3; 
+    cursor: pointer; 
+}
+
+.quantity{
+    flex: 4; 
+}
+
+.cartBtn{
+    padding: 10px 30px; 
+    border: none; 
+    background-color: black; 
+    color: white;
+    border-radius: 100px; 
+    cursor: pointer; 
+    transition: 0.2s;  
+    /* height: fit-content; */
+}
+
+.cartBtn:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1050px){
+    .content{
+        width: 350px; 
+    }
+    
+    .imageHolder{
+        height: 350px; 
+    }
+}
+
+
+@media only screen and (max-width: 850px){
+    .firstSection{
+        flex-direction: column; 
+    }
+
+    .first{
+        margin-bottom: 20px;;
+    }
+}

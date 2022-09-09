@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "helvetica";
+    margin: 0; 
+    /* display: flex;  */
+    /* justify-content: center; */
+}
+
+
+
+
+.midSection{
+    position: relative;
+    /* height: 500px;  */
+    /* background-color: pink; */
+    margin-top: 50px; 
+    display: flex; 
+    flex-direction: row-reverse;
+}
+
+.left{
+    flex: 1; 
+    /* background: blue;  */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.right{
+    flex: 1; 
+    /* background: green;  */
+}
+
+.portraitHolder{
+    height: 100%; 
+    width: 100%; 
+    position: relative;
+}
+
+/* .portrait{
+    width: 100%;
+} */
+
+.aboutText{
+    line-height: 1.5em;
+}
+
+.aboutSpace{
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1050px){
+    .uniWidth{
+        width: 850px;
+    }
+
+    body{
+        /* background: blue; */
+    }
+
+    .navMid a{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .uniWidth{
+        width: 95%;
+    }
+
+    body{
+        /* background: pink; */
+    }
+
+    .navMid{
+        display: none;
+    }
+
+
+    .navMidMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%; 
+    }
+
+    .menu{
+        cursor: pointer; 
+        color: #bbb;
+        margin: 0px;
+    }
+
+    .menu:hover{
+        opacity: 0.9;
+    }
+
+    .mobNav{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #bbb;
+        margin-bottom: 15px;
+        display: none;
+    }
+
+    .mobNav a{
+        margin-bottom: 15px;
+        color: #bbb;
+        text-decoration: none;
+    }
+
+    .star{
+        width: 20px;
+    }
+
+    .midSection{
+        flex-direction: column;
+    }
+
+    .portraitHolder{
+        height: 400px;
+    }
+
+    .portraitHolder .img{
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .star{
+        width: 15px; 
+    }
+}

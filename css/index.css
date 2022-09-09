@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0px; 
+    font-family: "helvetica";
+
+}
+
+section{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.imageHolder{
+    position: relative; 
+    width: 500px; 
+    height: 600px; 
+    margin-top: 30px; 
+    margin-bottom: 30px;
+}
+
+.img{
+    display: none; 
+}
+
+.navMid a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 850px){
+    .imageHolder{
+        width: 90%; 
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .imageHolder{
+        height: 500px;
+    }
+}

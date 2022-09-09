@@ -1,0 +1,25 @@
+section{
+    display: flex; 
+    /* background-color: green;  */
+    /* border: 1px solid black;  */
+    /* height: 200px;  */
+    margin-top: 50px; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.firstSection img{
+    margin-bottom: 20px;
+    max-height: 300px;
+    margin-right: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 850px){
+    .firstSection img{
+        max-width: 95%;
+        margin-right: 0px;
+    }
+}
